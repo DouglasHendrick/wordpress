@@ -17,7 +17,6 @@
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header Left Sidebar') ) : ?>
               <ul>
                 <li><a href="<?php echo home_url(); ?>">Home</a></li>
-                <?php wp_list_pages('title_li='); ?>
                 <li><a href="<?php bloginfo('atom_url'); ?>">Feed</a></li>
                 <?php if (is_user_logged_in()) { ?>
                     <li><a href="<?php echo get_option('siteurl'); ?>/wp-admin/">Admin</a></li>
